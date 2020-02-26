@@ -1,8 +1,5 @@
 package exercicio01;
 
-import java.util.Set;
-import java.util.TreeSet;
-
 public class Fibonacci {
 
     /**
@@ -17,11 +14,21 @@ public class Fibonacci {
      * 1, 2, 3, 5, 8, 13, 21, 34, 55, 89
      *
      * @param tamanho Tamanho da sequencia de números de Fibonacci a ser retornada.
-     * @return int[]
+     * @return
      */
     public int[] getSequenciaFibonacciDe(int tamanho) {
         // TODO: implemente o código deste método
-        return null;
+        int n1=0, n2=1, n3,i,count=10;
+        System.out.println((n1+ " "+n2));
+        for(i=2;i<count;++i)
+        {
+            n3=n1+n2;
+            System.out.print(" "+n3);
+            n1=n2;
+            n2=n3;
+        }
+
+        return new int[0];
     }
 
 }
